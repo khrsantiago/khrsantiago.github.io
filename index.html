@@ -1,59 +1,59 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<!-- <title>Aerial by HTML5 UP</title> -->
-		<title>Khristopher Santiago</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Khristopher Santiago</h1>
-						<h2>Passionate about technology and science</h2>
-						<h2>Mobile developer</h2>
-						<p>Flutter &nbsp;&bull;&nbsp; Python &nbsp;&bull;&nbsp; JavaScript</p>
-						<nav>
-							<ul>
-								<li><a href="https://github.com/khrsantiago/" 
-									class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/khrsantiago/" 
-									class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
-								<li><a href="mailto:khrsantiago@gmail.com" 
-									class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-								<li><a href="https://twitter.com/khrsantiago/" 
-									class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/khrsantiago/" 
-									class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/khrsantiago1/" 
-									class="icon solid fa-hashtag" target="_blank"><span class="label">Instagram</span></a></li>
-							</ul>
-						</nav>
-					</header>
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; 2023. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-					</footer>
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="personalpage">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>personalpage</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '203345167';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
 </html>
